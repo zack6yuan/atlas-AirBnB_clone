@@ -9,7 +9,6 @@ from models.place import Place
 from models.city import City
 from models.amenity import Amenity
 from models.review import Review
-from models.storage import Storage
 
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
@@ -26,3 +25,7 @@ class HBNBCommand(cmd.Cmd):
     def console_empty(self):
         """ Method: empty line doesn't affect anything """
         pass
+
+
+if __name__ == '__main__':
+    HBNBCommand().cmdloop()
