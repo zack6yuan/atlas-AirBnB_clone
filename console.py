@@ -12,6 +12,17 @@ from models.review import Review
 from models.storage import Storage
 
 class HBNBCommand(cmd.Cmd):
+    prompt = "(hbnb) "
     """ Method: create class for HBNB console """
 
+    def console_quit(self, arg):
+        """ Method: exits the console """
+        return True
 
+    def console_EOF(self, arg):
+        """ Method: exits the program """
+        return True
+    
+    def console_empty(self):
+        """ Method: empty line doesn't affect anything """
+        pass
