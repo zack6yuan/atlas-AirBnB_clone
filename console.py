@@ -22,7 +22,7 @@ class HBNBCommand(cmd.Cmd):
         """ Method: exits the program """
         return True
     
-    def empty(self):
+    def empty_line(self):
         """ Method: empty line doesn't affect anything """
         pass
 
