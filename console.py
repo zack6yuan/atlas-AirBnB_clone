@@ -8,10 +8,10 @@ from models.state import State
 from models.place import Place
 from models.city import City
 from models.amenity import Amenity
-from models.review import models
-from models.stotage import storage
+from models.review import Review
+from models.stotage import Storage
 
 class HBNBCommand(cmd.Cmd):
     """ Method: create class for HBNB console """
-    
+
 
