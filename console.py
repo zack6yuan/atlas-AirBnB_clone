@@ -80,7 +80,7 @@ class HBNBCommand(cmd.Cmd):
         """ Method: prints all string representation of all 
         instances based or not on the class name """
         if (arg) not in HBNBCommand.class_dictionary:
-            print("** class doesn't exist")
+            print("** class doesn't exist **")
         
 
     def do_update(self, arg):
