@@ -47,15 +47,12 @@ class FileStorage:
 
     def reload(self):
         """ deserializes the JSON file to __objects """
-        if os.path.isfile(self.__file_path):
-            try:
-                with open(self.__file_path, "r") as f:
-                    new_dict = json.load(f)
-                for key, value in new_dict.items():
-                    class_name = key.split(".")[0]
-                    if class_name in self.__class_map:
-                        self.__objects[key] = self.__class_map[class_name](**value)
-                    else:
-                        print(f"Class {class_name} not found.")
-            except json.JSONDecodeError:
-                print("Error: Invalid JSON format.")
+        my_dict = {'BaseModel': BaseModel, 'User': User, 'Place': Place,
+                   'Review': Review, 'Amenity': Amenity, 'City': City,
+                   'State': State}
+        if os.path.isfile(FileStorage.__file_path):
+            with open(FileStorage.__file_path, 'r', encoding='utf-8') as f:
+                other_dict = json.loads(f.read())
+                for key, value in other_dict.items():
+                    self.new(my_dict['__class__'](**value))
+
