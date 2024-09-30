@@ -37,7 +37,7 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, arg):
-        """ Method: creates new istance of BaseModel,
+        """ Method: creates new instance of BaseModel,
         saves it to the JSON file, and prints the id """
         if len(arg) == 0:
             print("** class name missing **")
@@ -59,6 +59,8 @@ class HBNBCommand(cmd.Cmd):
         elif len(arg) == 1:
             print("** instance id missing **")
         # if the instance of the class name doesn't exist for the id (here)
+        if not isinstance(arg, id):
+            print("** no instance found **")
 
     def do_destroy(self, arg):
         """ Method: deletes an instance based on the class
@@ -70,6 +72,8 @@ class HBNBCommand(cmd.Cmd):
         elif len(arg) == 1:
             print("** instance id missing **")
         # if the instance of the class name doesn't exist for the id (here)
+        if not isinstance(arg, id):
+            print("** no instance found **")
 
 
     def do_all(self, arg):
