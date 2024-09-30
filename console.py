@@ -67,12 +67,12 @@ class HBNBCommand(cmd.Cmd):
         name and the id, and saves change to JSON file """
         if len(arg) == 0:
             print("** class name missing **")
-        elif (arg) not in HBNBCommand.class_dictionary:
+        elif (arg[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
         elif len(arg) == 1:
             print("** instance id missing **")
         # if the instance of the class name doesn't exist for the id (here)
-        if not isinstance(arg, id):
+        elif not isinstance(arg[1], str):
             print("** no instance found **")
 
 
