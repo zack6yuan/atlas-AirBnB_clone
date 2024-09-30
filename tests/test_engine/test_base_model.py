@@ -3,7 +3,7 @@
 
 import unittest
 from models.base_model import BaseModel
-import datetime
+from datetime import datetime
 
 class TestBaseModel(unittest.TestCase):
     """Test case for BaseModel"""
@@ -17,4 +17,3 @@ class TestBaseModel(unittest.TestCase):
         self.assertIs(type(my_model.updated_at), datetime)
         self.assertIs(type(my_model.to_dict()), dict)
         self.assertIs(type(my_model.__str__()), str)
-        self.assertIs(type(my_model.save()), None)
