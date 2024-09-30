@@ -3,8 +3,9 @@ import unittest
 
 class UserTest(unittest.TestCase):
 
-    def test_func_1(self):
-        pass
+    def initialize_test(self):
+        """ Method: initialize "user" test """
+        self.user = User()
 
     def test_func_2(self):
         pass
