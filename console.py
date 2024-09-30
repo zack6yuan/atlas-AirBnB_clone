@@ -54,7 +54,7 @@ class HBNBCommand(cmd.Cmd):
         if len(arg) == 0:
             print("** class name missing **")
         args = arg.split()
-        elif (arg) not in HBNBCommand.class_dictionary:
+        if (arg) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
         elif len(arg) == 1:
             print("** instance id missing **")
