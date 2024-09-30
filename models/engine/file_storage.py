@@ -51,7 +51,7 @@ class FileStorage:
             try:
                 with open(self.__file_path, "r") as f:
                     new_dict = json.load(f)
-                for key, value in new_dict.item():
+                for key, value in new_dict.items():
                     class_name = key.split(".")[0]
                     if class_name in self.__class_map:
                         self.__objects[key] = self.__class_map[class_name](**value)
