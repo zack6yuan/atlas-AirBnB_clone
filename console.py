@@ -59,7 +59,7 @@ class HBNBCommand(cmd.Cmd):
         elif len(arg) == 1:
             print("** instance id missing **")
         # if the instance of the class name doesn't exist for the id (here)
-        if not isinstance(arg[1], str''):
+        if not isinstance(arg[1], str):
             print("** no instance found **")
 
     def do_destroy(self, arg):
