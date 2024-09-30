@@ -44,7 +44,7 @@ class HBNBCommand(cmd.Cmd):
         elif (arg) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist")
         # create new instance and print id
-        instnance = HBNBCommand.class_dictionary[arg]()
+        instance = HBNBCommand.class_dictionary[arg]()
         instance.save()
         print("{}".format(instance.id))
     
