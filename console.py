@@ -41,20 +41,22 @@ class HBNBCommand(cmd.Cmd):
         saves it to the JSON file, and prints the id """
         if len(arg) == 0:
             print("** class name missing **")
-        elif (arg) not in HBNBCommand.class_dictionary:
-            print("** class doesn't exist **")
-        else: # create new instance and print id
-            instance = HBNBCommand.class_dictionary[arg]()
-            instance.save()
-            print("{}".format(instance.id))
+        else:
+            split_name = arg.split()[0]
+            if (split_name) not in HBNBCommand.class_dictionary:
+                print("** class doesn't exist **")
+            else: # create new instance and print id
+                instance = HBNBCommand.class_dictionary[class_name]()
+                instance.save()
+                print("{}".format(instance.id))
     
     def do_show(self, arg):
         """ Method: prints the string representation of an
         instance based on the class name and the id """
         if len(arg) == 0:
             print("** class name missing **")
-        args = arg.split()
-        if (arg[0]) not in HBNBCommand.class_dictionary:
+        split_name = arg.split()[0]
+        if (split_name) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
         elif len(arg) == 1:
             print("** instance id missing **")
@@ -79,8 +81,10 @@ class HBNBCommand(cmd.Cmd):
     def do_all(self, arg):
         """ Method: prints all string representation of all 
         instances based or not on the class name """
-        if (arg) not in HBNBCommand.class_dictionary:
-            print("** class doesn't exist **")
+        if len(arg) > 0:
+            split_name = arg.split()[0]
+            if (split_name) not in HBNBCommand.class_dictionary:
+                print("** class doesn't exist **")
         
 
     def do_update(self, arg):
