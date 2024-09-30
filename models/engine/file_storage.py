@@ -14,8 +14,19 @@ from models.state import State
 
 class FileStorage:
     """ file storage class """
+
     __file_path = "file.json"
     __objects = {}
+
+    __class_map = {
+        "BaseModel": BaseModel,
+        "User": User,
+        "Place": Place,
+        "Review": Review,
+        "Amenity": Amenity,
+        "City": City,
+        "State": State
+}
 
     def all(self):
         """ returns the dictionary """
@@ -37,8 +48,14 @@ class FileStorage:
     def reload(self):
         """ deserializes the JSON file to __objects """
         if os.path.isfile(self.__file_path):
-            with open(self.__file_path, "r") as f:
-                new_dict = json.load(f)
-            for key, value in new_dict.items():
-                name = key.split(".")[0]
-                self.__objects[key] = eval(name)(**value)
+            try:
+                with open(self.__file_path, "r") as f:
+                    new_dict = json.load(f)
+                for key, value in new_dict.item():
+                    class_name = key.split(".")[0]
+                    if class_name in self.__class_map:
+                        self.__objects[key] = self.__class_map[class_name](**value)
+                    else:
+                        print(f"Class {class_name} not found.")
+            except json.JSONDecodeError:
+                print("Error: Invalid JSON format.")
