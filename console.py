@@ -42,7 +42,7 @@ class HBNBCommand(cmd.Cmd):
         if len(arg) == 0:
             print("** class name missing **")
         elif (arg) not in HBNBCommand.class_dictionary:
-            print("** class doesn't exist")
+            print("** class doesn't exist **")
         # create new instance and print id
         instance = HBNBCommand.class_dictionary[arg]()
         instance.save()
