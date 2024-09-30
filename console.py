@@ -91,7 +91,14 @@ class HBNBCommand(cmd.Cmd):
         """ Method: updates an instance based on the class
         name and id by adding or updating attribute, and saves
         change to JSON file """
-        pass
+        if len(arg) == 0:
+            print("** class name missing **")
+        elif (arg[0]) not in HBNBCommand.class_dictionary:
+            print("** class doesn't exist **")
+        elif len(arg) == 1:
+            print("** instance id missing **")
+            # add method for attribute name missing
+            # add method for attribute name value dne
 
 
 if __name__ == '__main__':
