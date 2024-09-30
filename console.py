@@ -14,6 +14,16 @@ class HBNBCommand(cmd.Cmd):
     """ Method: create class for HBNB console """
     prompt = "(hbnb) "
 
+    class_dictionary = {
+        "BaseModel": BaseModel,
+        "User": User,
+        "State": State,
+        "Place": Place,
+        "City": City,
+        "Amenity": Amenity,
+        "Review": Review
+    }
+
     def do_quit(self, arg):
         """ Method: exits the console """
         return True
