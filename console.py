@@ -39,31 +39,31 @@ class HBNBCommand(cmd.Cmd):
     def do_create(self, arg):
         """ Method: creates new istance of BaseModel,
         saves it to the JSON file, and prints the id """
-        if len(args) == 0:
+        if len(arg) == 0:
             print("** class name missing **")
-        elif (args) not in HBNBCommand.class_dictionary:
+        elif (arg) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist")
         # create new instnace and print id
     
     def do_show(self, arg):
         """ Method: prints the string representation of an
         instance based on the class name and the id """
-        if len(args) == 0:
+        if len(ars) == 0:
             print("** class name missing **")
-        elif (args) not in HBNBCommand.class_dictionary:
+        elif (arg) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
-        elif len(args) == 1:
+        elif len(arg) == 1:
             print("** instance id missing **")
         # if the instance of the class name doesn't exist for the id (here)
 
     def do_destroy(self, arg):
         """ Method: deletes an instance based on the class
         name and the id, and saves change to JSON file """
-        if len(args) == 0:
+        if len(arg) == 0:
             print("** class name missing **")
-        elif (args) not in HBNBCommand.class_dictionary:
+        elif (arg) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
-        elif len(args) == 1:
+        elif len(arg) == 1:
             print("** instnace id missing **")
         # if the instance of the class name doesn't exist for the id (here)
 
@@ -71,7 +71,7 @@ class HBNBCommand(cmd.Cmd):
     def do_all(self, arg):
         """ Method: prints all string representation of all 
         instances based or not on the class name """
-        if (args) not in HBNBCommand.class_dictionary:
+        if (arg) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist")
         
 
