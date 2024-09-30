@@ -16,17 +16,18 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
-class TestFileStorage_instantiation(unittest.TestCase):
-    """ define setup and teardown """
+class TestFileStorage(unittest.TestCase):
+    """Test the FileStorage class"""
 
     def setUp(self):
-        """ sets up the class """
-        self.my_model = FileStorage()
-
-    def tearDown(self):
-        """ tears down the class """
-        del self.my_model
-        try:
-            os.remove("file.json")
-        except FileNotFoundError:
-            pass
+        """Setup the test"""
+        self.storage = FileStorage()
+        self.file_path = "file.json"
+        self.user = User("email@example.com", "password", "John", "Doe")
+        self.user.id = "12345"
+        self.storage.new(self.user)
+        self.storage.save()
+        self.state = State("CA", "California")
+        self.state.id = "123456"
+        self.storage.new(self.state)
+        self.storage.save()
