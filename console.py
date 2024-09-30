@@ -43,10 +43,10 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
         elif (arg) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
-        # create new instance and print id
-        instance = HBNBCommand.class_dictionary[arg]()
-        instance.save()
-        print("{}".format(instance.id))
+        else: # create new instance and print id
+            instance = HBNBCommand.class_dictionary[arg]()
+            instance.save()
+            print("{}".format(instance.id))
     
     def do_show(self, arg):
         """ Method: prints the string representation of an
