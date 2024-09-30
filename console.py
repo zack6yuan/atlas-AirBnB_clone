@@ -54,12 +54,12 @@ class HBNBCommand(cmd.Cmd):
         if len(arg) == 0:
             print("** class name missing **")
         args = arg.split()
-        if (arg) not in HBNBCommand.class_dictionary:
+        if (arg[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
         elif len(arg) == 1:
             print("** instance id missing **")
         # if the instance of the class name doesn't exist for the id (here)
-        if not isinstance(arg, id):
+        if not isinstance(arg[1], str):
             print("** no instance found **")
 
     def do_destroy(self, arg):
@@ -67,12 +67,12 @@ class HBNBCommand(cmd.Cmd):
         name and the id, and saves change to JSON file """
         if len(arg) == 0:
             print("** class name missing **")
-        elif (arg) not in HBNBCommand.class_dictionary:
+        elif (arg[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
         elif len(arg) == 1:
             print("** instance id missing **")
         # if the instance of the class name doesn't exist for the id (here)
-        if not isinstance(arg, id):
+        elif not isinstance(arg[1], str):
             print("** no instance found **")
 
 
@@ -80,7 +80,7 @@ class HBNBCommand(cmd.Cmd):
         """ Method: prints all string representation of all 
         instances based or not on the class name """
         if (arg) not in HBNBCommand.class_dictionary:
-            print("** class doesn't exist")
+            print("** class doesn't exist **")
         
 
     def do_update(self, arg):
