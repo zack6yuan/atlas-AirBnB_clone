@@ -3,8 +3,8 @@ import unittest
 
 class FileStorageTest(unittest.TestCase):
 
-    def test_func_1(self):
-        pass
+    def initialize_test(self):
+        """ Method: initialize "file storage" test """
 
     def test_func_2(self):
         pass
