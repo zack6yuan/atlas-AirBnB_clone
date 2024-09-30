@@ -11,8 +11,8 @@ from models.amenity import Amenity
 from models.review import Review
 
 class HBNBCommand(cmd.Cmd):
-    prompt = "(hbnb) "
     """ Method: create class for HBNB console """
+    prompt = "(hbnb) "
 
     def do_quit(self, arg):
         """ Method: exits the console """
@@ -29,7 +29,7 @@ class HBNBCommand(cmd.Cmd):
     def do_create(self, arg):
         """ Method: creates new istance of BaseModel,
         saves it to the JSON file, and prints the id """
-        pass
+        
     
     def do_show(self, arg):
         """ Method: prints the string representation of an
