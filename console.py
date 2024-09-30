@@ -46,7 +46,7 @@ class HBNBCommand(cmd.Cmd):
             if (split_name) not in HBNBCommand.class_dictionary:
                 print("** class doesn't exist **")
             else: # create new instance and print id
-                instance = HBNBCommand.class_dictionary[class_name]()
+                instance = HBNBCommand.class_dictionary[split_name]()
                 instance.save()
                 print("{}".format(instance.id))
     
