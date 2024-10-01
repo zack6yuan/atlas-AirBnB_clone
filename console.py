@@ -30,6 +30,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, arg):
         """ Method: exits the program """
+        print("")
         return True
     
     def emptyline(self):
@@ -55,13 +56,13 @@ class HBNBCommand(cmd.Cmd):
         instance based on the class name and the id """
         if len(arg) == 0:
             print("** class name missing **")
-        split_name = arg.split()[0]
-        if (split_name) not in HBNBCommand.class_dictionary:
+        split_name = arg.split()
+        if (split_name[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
-        elif len(arg) == 1:
+        elif len(split_name) == 1:
             print("** instance id missing **")
         # if the instance of the class name doesn't exist for the id (here)
-        if not isinstance(arg[1], str):
+        if not isinstance(split_name[1], str):
             print("** no instance found **")
 
     def do_destroy(self, arg):
@@ -91,7 +92,14 @@ class HBNBCommand(cmd.Cmd):
         """ Method: updates an instance based on the class
         name and id by adding or updating attribute, and saves
         change to JSON file """
-        pass
+        if len(arg) == 0:
+            print("** class name missing **")
+        elif (arg[0]) not in HBNBCommand.class_dictionary:
+            print("** class doesn't exist **")
+        elif len(arg) == 1:
+            print("** instance id missing **")
+            # add method for attribute name missing
+            # add method for attribute name value dne
 
 
 if __name__ == '__main__':
