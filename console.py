@@ -65,7 +65,7 @@ class HBNBCommand(cmd.Cmd):
             print("** instance id missing **")
             return
         # if the instance of the class name doesn't exist for the id
-        key = "{}.{}".format(split_name[0], split_name[1])
+        key = split_name[1]
         if (key) not in HBNBCommand.class_dictionary:
             print("** no instance found **")
 
