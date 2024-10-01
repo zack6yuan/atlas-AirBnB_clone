@@ -109,13 +109,13 @@ class HBNBCommand(cmd.Cmd):
         if (class_name) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
             return
-        elif len(split_name) == 1:
+        elif len(split_name) < 2:
             print("** instance id missing **")
             return
-        elif len(split_name) == 2:
+        elif len(split_name) < 3:
             print("** attribute name missing **")
             return
-        elif len(split_name) == 3:
+        elif len(split_name) < 4:
             print("** value missing **")
             return
 
