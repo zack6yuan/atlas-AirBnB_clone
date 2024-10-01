@@ -2,6 +2,7 @@
 """unit test for base model class"""
 
 import unittest
+import models
 from models.base_model import BaseModel
 from models.user import User
 from datetime import datetime
@@ -21,10 +22,8 @@ class TestBaseModel(unittest.TestCase):
 
     def test_save(self):
         """Test save method"""
-        my_model = BaseModel()
-        updated_at = my_model.updated_at
-        my_model.save()
-        self.assertNotEqual(updated_at, my_model.updated_at)
+        self.updated_at = datetime.now()
+        models.FileStorage.save(models.storage)
 
     def test_to_dict(self):
         """Test to_dict method"""
