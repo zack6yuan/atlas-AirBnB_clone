@@ -33,3 +33,8 @@ class TestBaseModel(unittest.TestCase):
         self.assertIn('id', dict_model)
         self.assertIn('created_at', dict_model)
         self.assertIn('updated_at', dict_model)
+    
+    def save(self):
+        """Test save method"""
+        self.updated_at = datetime.now()
+        models.FileStorage.save(models.storage)
