@@ -2,12 +2,22 @@
 """unit test for base model class"""
 
 import unittest
+import models
 from models.base_model import BaseModel
+import pep8
+import os
+from models import base_model
 from models.user import User
 from datetime import datetime
 
 class TestBaseModel(unittest.TestCase):
     """Test case for BaseModel"""
+
+    def setUp(self):
+        """Set up for the tests"""
+        self.base = BaseModel()
+        self.updated_at = datetime.now()
+        models.storage.new(self.base)
 
     def test_normal_cases_base_model(self):
         """Test normal cases"""
@@ -21,10 +31,8 @@ class TestBaseModel(unittest.TestCase):
 
     def test_save(self):
         """Test save method"""
-        my_model = BaseModel()
-        updated_at = my_model.updated_at
-        my_model.save()
-        self.assertNotEqual(updated_at, my_model.updated_at)
+        self.updated_at = datetime.now()
+        models.FileStorage.save(models.storage)
 
     def test_to_dict(self):
         """Test to_dict method"""

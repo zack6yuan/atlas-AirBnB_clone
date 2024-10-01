@@ -7,7 +7,6 @@ import uuid
 from datetime import datetime
 import models
 
-
 class BaseModel:
     """
     Defines the BaseModel class with attributes and methods
@@ -16,7 +15,7 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """ Initializes a new instance of BaseModel.
-d, initializes a new instance with
+        initializes a new instance with
         unique ID and current timestamp. If kwargs are provided,
         initializes from the kwargs."""
         if not kwargs:
@@ -46,6 +45,7 @@ d, initializes a new instance with
         """
         self.updated_at = datetime.now()
         models.storage.save()
+        return self.id
 
     def to_dict(self):
         """ Converts the instance to a dictionary,
