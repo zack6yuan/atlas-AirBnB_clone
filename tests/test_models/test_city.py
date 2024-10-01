@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" Amenity unittest """
+""" City unittest """
 import unittest
-from models import Amenity
+from models import City
 
-class TestAmenity(unittest.TestCase):
-    """ class defined to test Amenity """
+class TestCity(unittest.TestCase):
+    """ class defined to test City """
     def setUp(self):
         """ Set up for the tests """
-        self.amenity = Amentiy()
+        self.city = City()
