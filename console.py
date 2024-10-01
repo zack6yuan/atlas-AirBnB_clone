@@ -30,6 +30,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, arg):
         """ Method: exits the program """
+        print("")
         return True
     
     def emptyline(self):
