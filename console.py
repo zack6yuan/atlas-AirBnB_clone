@@ -93,9 +93,9 @@ class HBNBCommand(cmd.Cmd):
         instances based or not on the class name """
         if len(arg) > 0:
             split_name = arg.split()[0]
-        if (split_name) not in HBNBCommand.class_dictionary:
-            print("** class doesn't exist **")
-            return
+            if (split_name) not in HBNBCommand.class_dictionary:
+                print("** class doesn't exist **")
+                return
 
     def do_update(self, arg):
         """ Method: updates an instance based on the class
