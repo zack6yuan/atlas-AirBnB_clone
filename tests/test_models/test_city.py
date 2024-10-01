@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ City unittest """
 import unittest
+import models
 from models import City
 
 class TestCity(unittest.TestCase):
