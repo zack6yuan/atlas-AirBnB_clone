@@ -108,12 +108,16 @@ class HBNBCommand(cmd.Cmd):
         class_name = split_name[0]
         if (class_name) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
+            return
         elif len(split_name) == 1:
             print("** instance id missing **")
+            return
         elif len(split_name) == 2:
             print("** attribute name missing **")
+            return
         elif len(split_name) == 3:
             print("** value missing **")
+            return
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
