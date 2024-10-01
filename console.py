@@ -104,13 +104,13 @@ class HBNBCommand(cmd.Cmd):
         if len(arg) == 0:
             print("** class name missing **")
         split_name = arg.split()
-        if (arg[0]) not in HBNBCommand.class_dictionary:
+        if (split_name[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
-        elif len(arg) == 1:
+        elif len(split_name) == 1:
             print("** instance id missing **")
-        elif len(arg) == 2:
+        elif len(split_name) == 2:
             print("** attribute name missing **")
-        elif len(arg) == 3:
+        elif len(split_name) == 3:
             print("** value missing **")
 
 
