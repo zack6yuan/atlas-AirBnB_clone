@@ -75,6 +75,7 @@ class HBNBCommand(cmd.Cmd):
         if len(arg) == 0:
             print("** class name missing **")
             return
+        split_name = arg.split()
         elif (arg[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
             return
@@ -101,7 +102,8 @@ class HBNBCommand(cmd.Cmd):
         change to JSON file """
         if len(arg) == 0:
             print("** class name missing **")
-        elif (arg[0]) not in HBNBCommand.class_dictionary:
+        split_name = arg.split()
+        if (arg[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
         elif len(arg) == 1:
             print("** instance id missing **")
