@@ -52,6 +52,6 @@ class FileStorage:
                     cls_name = o["__class__"]
                     del o["__class__"]
                     if cls_name in self.__class_dictionary:
-                        self.new(eval(cls_name)(**o))
+                        self.new(self.__class_dictionary[cls_name](**o))
         except FileNotFoundError:
             return
