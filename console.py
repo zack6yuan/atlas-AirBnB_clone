@@ -98,9 +98,10 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
         elif len(arg) == 1:
             print("** instance id missing **")
-        elif len(arg) < 3:
+        elif len(arg) == 2:
             print("** attribute name missing **")
-            # add method for if attribute name value does not exist
+        elif len(arg) == 3:
+            print("** value missing **")
 
 
 if __name__ == '__main__':
