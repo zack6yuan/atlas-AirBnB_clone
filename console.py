@@ -23,7 +23,7 @@ class HBNBCommand(cmd.Cmd):
         "Amenity": Amenity,
         "Review": Review
     }
-
+    """ "help" is a built in command provided by the cmd module """
     def do_quit(self, arg):
         """ Method: exits the console """
         return True
