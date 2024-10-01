@@ -33,3 +33,8 @@ This is the first step towards building your first full web application: the Air
 - All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
 - All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
 - All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
+
+## How to Start?
+1. Clone this repository: https://github.com/zack6yuan/atlas-AirBnB_clone.git 
+2. Navigate to the "atas-AirBnB_clone" directory.
+3. Run the console using the command "./console.py"
