@@ -4,11 +4,20 @@
 import unittest
 import models
 from models.base_model import BaseModel
+import pep8
+import os
+from models import base_model
 from models.user import User
 from datetime import datetime
 
 class TestBaseModel(unittest.TestCase):
     """Test case for BaseModel"""
+
+    def setUp(self):
+        """Set up for the tests"""
+        self.base = BaseModel()
+        self.updated_at = datetime.now()
+        models.storage.new(self.base)
 
     def test_normal_cases_base_model(self):
         """Test normal cases"""
@@ -33,8 +42,3 @@ class TestBaseModel(unittest.TestCase):
         self.assertIn('id', dict_model)
         self.assertIn('created_at', dict_model)
         self.assertIn('updated_at', dict_model)
-    
-    def save(self):
-        """Test save method"""
-        self.updated_at = datetime.now()
-        models.FileStorage.save(models.storage)
