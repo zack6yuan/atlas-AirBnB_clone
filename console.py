@@ -56,28 +56,35 @@ class HBNBCommand(cmd.Cmd):
         instance based on the class name and the id """
         if len(arg) == 0:
             print("** class name missing **")
+            return
         split_name = arg.split()
         if (split_name[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
+            return
         elif len(split_name) == 1:
             print("** instance id missing **")
-        # if the instance of the class name doesn't exist for the id (here)
+            return
+        # if the instance of the class name doesn't exist for the id
         if not isinstance(split_name[1], str):
             print("** no instance found **")
+            return
 
     def do_destroy(self, arg):
         """ Method: deletes an instance based on the class
         name and the id, and saves change to JSON file """
         if len(arg) == 0:
             print("** class name missing **")
+            return
         elif (arg[0]) not in HBNBCommand.class_dictionary:
             print("** class doesn't exist **")
+            return
         elif len(arg) == 1:
             print("** instance id missing **")
+            return
         # if the instance of the class name doesn't exist for the id (here)
         elif not isinstance(arg[1], str):
             print("** no instance found **")
-
+            return
 
     def do_all(self, arg):
         """ Method: prints all string representation of all 
@@ -86,7 +93,7 @@ class HBNBCommand(cmd.Cmd):
             split_name = arg.split()[0]
             if (split_name) not in HBNBCommand.class_dictionary:
                 print("** class doesn't exist **")
-        
+                return
 
     def do_update(self, arg):
         """ Method: updates an instance based on the class
