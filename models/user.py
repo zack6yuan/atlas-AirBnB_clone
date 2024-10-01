@@ -5,7 +5,14 @@ from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """ Class User that inherits from BaseModel """
+    """ Class User that inherits from BaseModel 
+    
+    Attributes:
+    email(str): the email address of the user interacting with the console
+    password(str): the password of the user interacting with the console
+    first_name(str): the first name of the user interacting with the console
+    last_name(str): the last name of the user interacting with the console
+    """
     email = ""
     password = ""
     first_name = ""
