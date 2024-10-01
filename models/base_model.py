@@ -15,7 +15,7 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """ Initializes a new instance of BaseModel.
-d, initializes a new instance with
+        initializes a new instance with
         unique ID and current timestamp. If kwargs are provided,
         initializes from the kwargs."""
         if not kwargs:
