@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ unittest for place """
 import unittest
-from models.place import place
+from models.place import Place
 
 class TestPlace(unittest.TestCase):
     """ Class defined for "place" testcase """
