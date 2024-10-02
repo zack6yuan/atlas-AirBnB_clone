@@ -8,7 +8,11 @@ class TestPlace(unittest.TestCase):
     def setUp(self):
         """ Method: represent "place" testcase """
         self.place = Place()
-        self.assertEqual(type(self.place), Place)
+
+    def test_object(self):
+        """ Method: test if object was created
+        object to check vs class """
+        self.assertIsInstance(self.place, Place)
 
     def test_place_values(self):
         """ Method: Start test for "place" """
