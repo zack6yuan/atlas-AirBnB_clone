@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Amenity unittest """
 import unittest
+from models.amenity import Amenity
 
 class TestAmenity(unittest.TestCase):
     """ Test case for Amenity """
