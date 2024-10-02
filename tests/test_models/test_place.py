@@ -5,12 +5,13 @@ from models.place import Place
 
 class TestPlace(unittest.TestCase):
     """ Class defined for "place" testcase """
-    def test_place_setup(self):
-        """ Method: represent place "testcase" """
+    def setUp(self):
+        """ Method: represent "place" testcase """
         self.place = Place()
         self.assertEqual(type(self.place), Place)
 
     def test_place_values(self):
+        """ Method: Start test for "place" """
         self.place = Place()
         self.assertEqual(self.place.city_id, "")
         self.assertEqual(self.place.user_id, "")
