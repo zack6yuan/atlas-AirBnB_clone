@@ -8,8 +8,7 @@ class TestPlace(unittest.TestCase):
     def test_place_setup(self):
         """ Method: represent place "testcase" """
         self.place = Place()
-        if self.place in place:
-            return True
+        self.assertEqual(type(self.place), Place)
 
     def test_place_values(self):
         self.place = Place()
