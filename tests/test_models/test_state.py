@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ unittest for state """
 import unittest
+from models.state import State
 
 class TestState(unittest.TestCase):
     """ Class defined for "state" testcase """
