@@ -12,7 +12,7 @@ class TestState(unittest.TestCase):
     def test_state_values(self):
         """ Method: Start test for "state" """
         self.state = State()
-        self.assertEqual(self.stae.name, "")
+        self.assertEqual(self.state.name, "")
 
 if __name__ == "__main__":
     unittest.main()
