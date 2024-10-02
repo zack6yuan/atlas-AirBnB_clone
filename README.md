@@ -6,6 +6,7 @@ The first step towards building our first full web application: the AirBnB clone
 ## Significance and Usage:
 - We have created a command-line interface that interacts with users.
 - This console interprets commands from the user and simulates an environment where the objects can be stored and retrieved.
+- The instances of objects are stored in JSON files, using JSON serialization.
 - We will use what we build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
 
 ## How to Start:
