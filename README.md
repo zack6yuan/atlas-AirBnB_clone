@@ -24,6 +24,7 @@ The first step towards building our first full web application: the AirBnB clone
 - __"create"__ - creates a new instance of BaseModel, saves it to the JSON file, and prints the id.
 - __"destroy"__ - deletes an instance based on the class name and the id, and saves change to a JSON file.
 - __"show"__ - prints the string representation of an instance based on the class name and the id.
+- __"update"__ - Updates an instance based on the class name and id by adding or updating attribute.
 - __"quit"__ - exits the console.
 - __"EOF"__ - exits the console.
 
