@@ -4,9 +4,11 @@
 The first step towards building our first full web application: the AirBnB clone. 
 
 ## Significance and Usage:
+- We have created a command-line interface that interacts with users.
+- This console interprets commands from the user and simulates an environment where the objects can be stored and retrieved.
 - We will use what we build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
 
-## How to Start and Interact?
+## How to Start:
 - Clone this repository.
 ![carbon (10)](https://github.com/user-attachments/assets/007bb26b-1052-403d-aad6-c85985eecd09)
 - Navigate to the "atlas-AirBnB_clone" directory.
