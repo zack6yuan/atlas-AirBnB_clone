@@ -34,7 +34,7 @@ This is the first step towards building your first full web application: the Air
 - All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
 - All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 
-## How to Start?
+## How to Start and Interact?
 - Clone this repository.
 ![carbon (10)](https://github.com/user-attachments/assets/007bb26b-1052-403d-aad6-c85985eecd09)
 - Navigate to the "atlas-AirBnB_clone" directory.
@@ -45,7 +45,7 @@ This is the first step towards building your first full web application: the Air
 ![carbon (13)](https://github.com/user-attachments/assets/a99fbbac-f6bc-4f3a-88a6-159edbf716c8)
 
 ## Example Command Usage
-- "help" - shows the list of the concole's documented commands.
+- "help" - shows the list of the console's documented commands.
 - "create" - creates a new instance of BaseModel, saves it to the JSON file, and prints the id.
 - "destroy" - deletes an instance based on the class name and the id, and saves change to a JSON file.
 - "show" - prints the string representation of an instance based on the class name and the id.
