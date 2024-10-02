@@ -7,12 +7,11 @@ class TestState(unittest.TestCase):
     def setUp(self):
         """ Method: represent "state" testcase """
         self.state = State()
-        self.assertEqual(self.state.name, "")
 
     def test_state_values(self):
         """ Method: Start test for "state" """
         self.state = State()
-        self.assertEqual(self.place.name, "")
+        self.assertEqual(self.stae.name, "")
 
 if __name__ == "__main__":
     unittest.main()
