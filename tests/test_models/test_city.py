@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ City unittest """
 import unittest
+from models.city import City
 
 class TestCity(unittest.TestCase):
     """ Test case for City """
