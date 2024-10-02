@@ -36,6 +36,7 @@ This is the first step towards building your first full web application: the Air
 
 ## How to Start?
 - Clone this repository.
+  ![carbon (9)](https://github.com/user-attachments/assets/9a1976c9-eb41-4cce-83b8-5862e18503cf)
 - Navigate to the "atlas-AirBnB_clone" directory.
 - Run the console using the command "./console.py"
 - You are now interacting with the console!
