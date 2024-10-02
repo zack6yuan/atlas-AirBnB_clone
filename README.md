@@ -18,11 +18,11 @@ The first step towards building our first full web application: the AirBnB clone
 
 ## Example Command Usage
 - __"help"__ - shows the list of the console's documented commands.
-- "create" - creates a new instance of BaseModel, saves it to the JSON file, and prints the id.
-- "destroy" - deletes an instance based on the class name and the id, and saves change to a JSON file.
-- "show" - prints the string representation of an instance based on the class name and the id.
-- "quit" - exits the console.
-- "EOF" - exits the console.
+- __"create"__ - creates a new instance of BaseModel, saves it to the JSON file, and prints the id.
+- __"destroy"__ - deletes an instance based on the class name and the id, and saves change to a JSON file.
+- __"show"__ - prints the string representation of an instance based on the class name and the id.
+- __"quit"__ - exits the console.
+- __"EOF"__ - exits the console.
 
 ## Authors
 - [@BoostedT](https://www.github.com/BoostedT)
