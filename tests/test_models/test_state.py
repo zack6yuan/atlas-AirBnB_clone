@@ -3,7 +3,16 @@
 import unittest
 
 class TestState(unittest.TestCase):
-    """ Test case for State """
+    """ Class defined for "state" testcase """
     def setUp(self):
-        """ Set up for the tests """
-        
+        """ Method: represent "state" testcase """
+        self.state = State()
+        self.assertEqual(self.state.name, "")
+
+    def test_state_values(self):
+        """ Method: Start test for "state" """
+        self.state = State()
+        self.assertEqual(self.place.name, "")
+
+if __name__ == "__main__":
+    unittest.main()
