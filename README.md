@@ -1,7 +1,10 @@
 - # AirBnB Clone - The Console
 ![Screenshot 2024-09-26 115314](https://github.com/user-attachments/assets/087cb7b3-3939-463e-82c2-4f663aab82b3)
 
-This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
+The first step towards building our first full web application: the AirBnB clone. 
+
+## Significance and Usage:
+- We will use what we build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
 
 # Requirements
 ## Python Scripts
