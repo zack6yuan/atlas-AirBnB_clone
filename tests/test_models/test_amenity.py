@@ -8,7 +8,7 @@ class TestAmenity(unittest.TestCase):
 
     def setUp(self):
         """ Set up for the tests """
-        self.amentiy = Amentiy()
+        self.amentiy = Amenity()
 
     def test_amentiy_values(self):
         """ Method: Start test for "amenity" """
