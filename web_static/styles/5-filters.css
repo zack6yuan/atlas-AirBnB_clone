@@ -6,9 +6,9 @@
     border-radius: 4px;
 }
 
-button {
+.filters .button {
     font-size: 18px;
-    background-color: #FF5A5F;
+    background-color: #FF5F5F;
     color: #FFFFFF;
     height: 48px;
     width: 20%;
@@ -19,6 +19,12 @@ button {
     margin-top: 11px;
  }
 
- button:hover {
+.filters .button:hover {
     opacity: 90%;
+ }
+
+ .locations {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
  }
