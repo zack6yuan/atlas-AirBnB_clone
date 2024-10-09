@@ -6,9 +6,9 @@
     border-radius: 4px;
 }
 
-.filters .button {
+button {
     font-size: 18px;
-    background-color: #FF5F5F;
+    background-color: #FF5A5F;
     color: #FFFFFF;
     height: 48px;
     width: 20%;
@@ -19,12 +19,31 @@
     margin-top: 11px;
  }
 
-.filters .button:hover {
+button:hover {
     opacity: 90%;
- }
+}
 
- .locations {
+.locations {
     height: 100%;
     width: 25%;
     border-right: 1px solid #DDDDDD;
- }
+    margin-right: 700px;
+    margin-left: 50px;
+    padding-top: 1px;
+}
+
+.amenities {
+    height: 100%;
+    width: 25%;
+    margin-left: 350px;
+    margin-top: -70px;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 400;
+    margin-top: -16px
+}
