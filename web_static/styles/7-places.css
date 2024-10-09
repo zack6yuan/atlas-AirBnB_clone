@@ -1,24 +1,25 @@
+/* container for the entire layout */
 .places {
     display: flex;
     font-size: 30px;
     flex-wrap: wrap;
 }
-
+/* style for the main heading */
 .places h1 {
     font-size: 30px;
     width: 100%;
     text-align: left;
 }
-
+/* style for the haeading withing each article */
 article h2 {
     font-size: 30px;
     text-align: center;
 }
-
+/* style for the structure of each article */
 article {
     display: wrap;
     width: 390px;
-    padding: 20px ;
+    padding: 20px;
     margin: 20px auto;
     margin-top: 20px;
     border: 1px solid #FF5A5F;
