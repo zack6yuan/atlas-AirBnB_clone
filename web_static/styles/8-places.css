@@ -24,3 +24,21 @@ article {
     border: 1px solid #FF5A5F;
     border-radius: 4px;
 }
+
+div.price_by_night {
+    color: #FF5A5F;
+    border: 4px rounded #FF5A5F;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+div.information {
+    height: 80px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #FFFFFF
+}
+
+.max_guest {
+    background-image: ("../")
+}
