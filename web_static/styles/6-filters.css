@@ -27,9 +27,9 @@ button:hover {
     height: 100%;
     width: 25%;
     border-right: 1px solid #DDDDDD;
-    border-radius: 4px;
-    margin-right: 40px;
+    margin-right: 700px;
     margin-left: 50px;
+    padding-top: 1px;
 }
 
 .amenities {
