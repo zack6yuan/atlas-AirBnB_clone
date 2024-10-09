@@ -27,6 +27,7 @@ button:hover {
     height: 100%;
     width: 25%;
     border-right: 1px solid #DDDDDD;
+    border-radius: 4px;
     margin-right: 40px;
     margin-left: 50px;
 }
@@ -66,8 +67,13 @@ h4 {
 
 .locations:hover .popover {
     display: block;
+    list-style: none;
+    height: 165px;
 }
 
 .amenities:hover .popover {
     display: block;
+    list-style: none;
+    height: 80px;
+    padding-top: 10px;
 }
