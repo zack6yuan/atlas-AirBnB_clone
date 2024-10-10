@@ -34,10 +34,10 @@ button:hover {
 }
 /* style for amenities */
 .amenities {
-    height: 100%;
+    height: 40%;
     width: 25%;
     margin-left: 350px;
-    margin-top: -87px;
+    margin-top: -70px;
 }
 /* style for h3 headers */
 h3 {

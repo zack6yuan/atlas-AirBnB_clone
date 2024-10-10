@@ -9,8 +9,9 @@
     font-size: 30px;
     width: 100%;
     text-align: left;
+    margin-left: 10px;
 }
-/* style for the haeading withing each article */
+/* style for the heading withing each article */
 article h2 {
     font-size: 30px;
     text-align: center;
@@ -21,7 +22,7 @@ article {
     width: 390px;
     padding: 20px;
     margin: 20px auto;
-    margin-top: 20px;
+    margin-top: 1px;
     border: 1px solid #FF5A5F;
     border-radius: 4px;
 }
